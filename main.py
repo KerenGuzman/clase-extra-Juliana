@@ -1,15 +1,12 @@
-meme_dict = {
-            "CRINGE": "Algo excepcionalmente raro o embarazoso",
-            "LOL": "Una respuesta común a algo gracioso",
-            "ROFL":"una respuesta a una broma"
-            }
-word = input("Escribe una palabra que no entiendas (¡con mayúsculas!): ")
-if word in meme_dict.keys():
-    print(meme_dict[word])
-else:
-    print("esa palabra no se encuentra en mi diccionario")
+import random
+elements = "+-/*!&$#?=@<>abcdefghijklnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ1234567890"
+pass_length = int(input("Introduzca la longitud del pase: "))
 
+password = ""
+for i in range(pass_length):
+    password += random.choice(elements)
 
+print(password)
 
 
 
